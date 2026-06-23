@@ -1,0 +1,578 @@
+<!-- Declara ao navegador que este é um documento baseado no padrão HTML5 moderno -->
+<!DOCTYPE html>
+<!-- Define o idioma padrão da estrutura da página como Português de Angola -->
+<html lang="pt-AO">
+<head>
+    <!-- Configura a codificação universal de caracteres para evitar erros de acentuação gráfica -->
+    <meta charset="UTF-8">
+    <!-- Garante uma renderização adaptável e responsiva para ecrãs de telemóveis e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título oficial do portfólio corporativo exibido na aba do navegador web -->
+    <title>DITEC - Desenvolvimento, Integração e Tecnologia</title>
+    <!-- Vincula a biblioteca externa de ícones FontAwesome para renderizar os símbolos visuais do projeto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Vincula o ficheiro de estilos CSS externo que irá controlar toda a identidade visual -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==============================================================================================
+         CABEÇALHO DA PÁGINA (MENU DE NAVEGAÇÃO SUPERIOR)
+         ============================================================================================== -->
+    <header class="header-principal">
+        <!-- Divisor interno responsável por centralizar e limitar a largura do conteúdo do topo -->
+        <div class="container container-header">
+            <!-- Bloco reservado para o logotipo oficial da empresa -->
+            <div class="logo-area">
+                <!-- Insere o ficheiro do logotipo referenciado a partir do ficheiro DITEC.ico.jpg -->
+                <img src="img/logo/LOGO.png" alt="Logótipo Oficial DITEC" class="img-logo">
+            </div>
+            <!-- Menu de links de navegação interna para rolagem suave na página -->
+            <nav class="menu-navegacao">
+                <!-- Hiperligação direta para a secção institucional de apresentação -->
+                <a href="#sobre" class="link-menu">Sobre Nós</a>
+                <!-- Hiperligação direta para a listagem das competências e serviços prestados -->
+                <a href="#servicos" class="link-menu">Serviços</a>
+                <!-- Hiperligação para a galeria de projetos práticos e em desenvolvimento -->
+                <a href="#projetos" class="link-menu">Projetos</a>
+                <!-- Hiperligação para a área que exibe os membros da equipa de engenharia -->
+                <a href="#equipa" class="link-menu">Equipa</a>
+                <!-- Hiperligação de rodapé para a secção de marcas parceiras homologadas -->
+                <a href="#parceiros" class="link-menu">Parceiros</a>
+                <!-- Botão de destaque final para conversão ou abertura direta de contacto -->
+                <a href="#contactos" class="btn-menu-contacto">Iniciar Projeto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="carousel-container">
+    <div class="carousel-track">
+        
+        <div class="carousel-slide active">
+            <div class="carousel-overlay"></div>
+            <img src="img/CARROCEL/2.png" alt="DITEC Tecnologia" class="carousel-img">
+            <div class="carousel-content">
+                <span class="carousel-tag">Inovação & Futuro</span>
+                <h2>Transformamos Ideias em Soluções Tecnológicas</h2>
+                <p>A DITEC desenvolve, integra e implementa soluções modernas para empresas que querem ir mais longe.</p>
+                <div class="carousel-buttons">
+                    <a href="#contactos" class="btn-primary">Iniciar Projeto</a>
+                    <a href="#servicos" class="btn-secondary">Nossos Serviços</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide">
+            <div class="carousel-overlay"></div>
+            <img src="img/CARROCEL/1.png" alt="Desenvolvimento de Sistemas" class="carousel-img">
+            <div class="carousel-content">
+                <span class="carousel-tag">Sistemas Sob Medida</span>
+                <h2>Desenvolvimento e Integração Avançada</h2>
+                <p>Criamos plataformas robustas, seguras e personalizadas para otimizar os processos do seu negócio.</p>
+                <div class="carousel-buttons">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide">
+            <div class="carousel-overlay"></div>
+            <img src="img/CARROCEL/3.png" alt="Infraestrutura e Suporte" class="carousel-img">
+            <div class="carousel-content">
+                <span class="carousel-tag">Suporte 24/7</span>
+                <h2>Infraestrutura Tecnológica Segura</h2>
+                <p>Garantimos a máxima estabilidade e segurança informática para proteger os seus dados mais valiosos.</p>
+                <div class="carousel-buttons">
+                    <a href="#contactos" class="btn-primary">Fale Connosco</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-arrow prev" aria-label="Slide Anterior">&#10094;</button>
+    <button class="carousel-arrow next" aria-label="Próximo Slide">&#10095;</button>
+
+    <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+    </div>
+</div>
+
+    <!-- ==============================================================================================
+         SECÇÃO INSTITUCIONAL: SOBRE A DITEC
+         ============================================================================================== -->
+    <section class="seccao-sobre" id="sobre">
+        <!-- Container de alinhamento simétrico central para o bloco institucional -->
+        <div class="container">
+            <!-- Cabeçalho padronizado da secção contendo título e subtítulo superior mini -->
+            <div class="cabecalho-bloco">
+                <span class="subtitulo-mini">QUEM SOMOS</span>
+                <h2 class="titulo-principal">Sobre a DITEC</h2>
+            </div>
+            
+            <!-- Divisor flexível que separa o bloco textual da imagem corporativa lateral -->
+            <div class="conteudo-sobre">
+                <!-- Bloco contendo os manifestos e textos explicativos da organização -->
+                <div class="texto-sobre">
+                    <!-- Parágrafo introdutório descrevendo o ecossistema e objetivo da marca -->
+                    <p class="paragrafo-institucional">
+                        A DITEC (Desenvolvimento, Integração e Tecnologia) é uma equipa multidisciplinar dedicada à criação de soluções tecnológicas inovadoras e eficientes.
+                    </p>
+                    <!-- Segundo parágrafo reforçando os pilares de compromisso e entrega de valor -->
+                    <p class="paragrafo-institucional">
+                        Trabalhamos com compromisso, qualidade e inovação para transformar desafios em oportunidades e impulsionar o crescimento dos nossos clientes.
+                    </p>
+                    <!-- Área reservada para a assinatura corporativa oficial da equipa técnica -->
+                    <div class="bloco-assinatura">
+                        <!-- Identificação textual em caixa alta da assinatura da equipa -->
+                        <span class="titulo-equipa">EQUIPA DITEC</span>
+                    </div>
+                </div>
+                <!-- Bloco direito contendo a imagem representativa do ambiente ou equipa de engenharia -->
+                <div class="imagem-sobre">
+                    <!-- Imagem genérica de escritório tecnológico com alta resolução vinda da web -->
+                    <img src="img/SOBRE.png" class="foto-corporativa">
+                </div>
+            </div>
+
+            <!-- Grade de três colunas destacando a Missão, Visão e Valores institucionais -->
+            <div class="grade-missao">
+                <!-- Cartão individual focado na Missão Organizacional -->
+                <div class="cartao-missao">
+                    <!-- Ícone visual representando um alvo técnico para a missão -->
+                    <div class="icone-card"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="titulo-card-missao">MISSÃO</h3>
+                    <p class="txt-card-missao">Desenvolver soluções tecnológicas que contribuam para a transformação digital e crescimento das organizações.</p>
+                </div>
+
+                <!-- Cartão individual focado na Visão de Futuro da marca -->
+                <div class="cartao-missao">
+                    <!-- Ícone visual representando um olho para monitorização e visão de futuro -->
+                    <div class="icone-card"><i class="fas fa-eye"></i></div>
+                    <h3 class="titulo-card-missao">VISÃO</h3>
+                    <p class="txt-card-missao">Ser referência em desenvolvimento e integração tecnológica, reconhecida pela qualidade, confiança e resultados.</p>
+                </div>
+
+                <!-- Cartão individual focado na listagem de Valores inegociáveis -->
+                <div class="cartao-missao">
+                    <!-- Ícone de gema/diamante simbolizando os valores preciosos da marca -->
+                    <div class="icone-card"><i class="fas fa-gem"></i></div>
+                    <h3 class="titulo-card-missao">VALORES</h3>
+                    <!-- Divisor interno para organizar as duas colunas de listas de valores -->
+                    <div class="sublistas-valores">
+                        <!-- Primeira coluna contendo três valores chaves -->
+                        <ul class="lista-valores-itens">
+                            <li><i class="fas fa-check-circle"></i> Inovação</li>
+                            <li><i class="fas fa-check-circle"></i> Qualidade</li>
+                            <li><i class="fas fa-check-circle"></i> Integridade</li>
+                        </ul>
+                        <!-- Segunda coluna contendo dois valores complementares -->
+                        <ul class="lista-valores-itens">
+                            <li><i class="fas fa-check-circle"></i> Compromisso</li>
+                            <li><i class="fas fa-check-circle"></i> Evolução</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================================================================
+         SECÇÃO DE PRESTAÇÃO DE SERVIÇOS (FUNDO CLARO CONFORME LAYOUT)
+         ============================================================================================== -->
+    <section class="seccao-servicos" id="servicos">
+        <div class="container">
+            <!-- Cabeçalho identificativo do bloco de serviços técnicos oferecidos -->
+            <div class="cabecalho-bloco">
+                <span class="subtitulo-mini">O QUE FAZEMOS</span>
+                <h2 class="titulo-principal">Nossos Serviços</h2>
+            </div>
+
+            <!-- Grade adaptável configurada em 5 colunas para distribuição dos serviços -->
+            <div class="grade-servicos">
+                <!-- Cartão de Serviço 1: Engenharia e Sistemas -->
+                <div class="cartao-servico">
+                    <div class="icone-servico"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="titulo-servico-item">Desenvolvimento de Sistemas</h3>
+                    <p class="txt-servico-item">Criação de sistemas web e aplicações personalizadas para diferentes necessidades.</p>
+                </div>
+
+                <!-- Cartão de Serviço 2: Integração de Ecossistemas -->
+                <div class="cartao-servico">
+                    <div class="icone-servico"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="titulo-servico-item">Integração Tecnológica</h3>
+                    <p class="txt-servico-item">Integramos plataformas, sistemas e processos para otimizar a sua operação.</p>
+                </div>
+
+                <!-- Cartão de Serviço 3: Servidores e Nuvem -->
+                <div class="cartao-servico">
+                    <div class="icone-servico"><i class="fas fa-server"></i></div>
+                    <h3 class="titulo-servico-item">Infraestrutura Tecnológica</h3>
+                    <p class="txt-servico-item">Implementação e suporte de ambientes tecnológicos seguros e eficientes.</p>
+                </div>
+
+                <!-- Cartão de Serviço 4: Arquitetura e Consultorias -->
+                <div class="cartao-servico">
+                    <div class="icone-servico"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="titulo-servico-item">Consultoria Tecnológica</h3>
+                    <p class="txt-servico-item">Análise, planeamento e orientação para soluções digitais eficientes.</p>
+                </div>
+
+                <!-- Cartão de Serviço 5: Proteção e Blindagem Digital -->
+                <div class="cartao-servico">
+                    <div class="icone-servico"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="titulo-servico-item">Segurança Informática</h3>
+                    <p class="txt-servico-item">Aplicamos boas práticas e tecnologias para proteger os seus dados e sistemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================================================================
+         SECÇÃO DE PROJETOS E PORTFÓLIO (4 COLUNAS EM GRADE)
+         ============================================================================================== -->
+    <section class="seccao-projetos" id="projetos">
+        <div class="container">
+            <!-- Cabeçalho com o portfólio de produtos e entregas efetuadas -->
+            <div class="cabecalho-bloco">
+                <span class="subtitulo-mini">NOSSOS PROJETOS</span>
+                <h2 class="titulo-principal">Projetos em Destaque</h2>
+            </div>
+
+            <!-- Grade estruturada nativamente em 4 colunas horizontais simétricas -->
+            <div class="grade-projetos">
+                <!-- Projeto 1: Sistema Hoteleiro -->
+                <article class="cartao-projeto">
+                    <div class="capa-projeto-wrapper">
+                        <img src="img/PROJECTOS/Nfast.png" alt="NFAST - ENTREGAS SEGURAS" class="img-projeto-capa">
+                    </div>
+                    <h3 class="titulo-projeto-card">Sistema de Gestão de Entregas</h3>
+                    <p class="txt-projeto-card">Plataforma completa para gestão de entregas, incluindo pedidos, stock, cotação diaria e pagamentos.</p>
+                    <a href="#" class="link-detalhes-projeto">Ver detalhes &rarr;</a>
+                </article>
+
+                <!-- Projeto 2: Processos Operacionais -->
+                <article class="cartao-projeto">
+                    <div class="capa-projeto-wrapper">
+                        <img src="img/PROJECTOS/palpites.png" alt="PALPITES ON" class="img-projeto-capa">
+                    </div>
+                    <h3 class="titulo-projeto-card">Palpites on</h3>
+                    <p class="txt-projeto-card">Solução integrada para gestão, monitoramento e centralização de apostas e acompanhamento de Jogos de Ruas.</p>
+                    <a href="#" class="link-detalhes-projeto">Ver detalhes &rarr;</a>
+                </article>
+
+                <!-- Projeto 3: Conexões Comerciais -->
+                <article class="cartao-projeto">
+                    <div class="capa-projeto-wrapper">
+                        <img src="img/PROJECTOS/hotel.jpeg" alt="HOTEL KATYVALA" class="img-projeto-capa">
+                    </div>
+                    <h3 class="titulo-projeto-card">Ango-Ásia Hub</h3>
+                    <p class="txt-projeto-card">Plataforma digital para conexão, logística e cooperação entre empresas e parceiros internacionais.</p>
+                    <a href="#" class="link-detalhes-projeto">Ver detalhes &rarr;</a>
+                </article>
+
+                <!-- Projeto 4: Indicador de Construção / Backend Ativo -->
+                <article class="cartao-projeto card-estado-desenvolvimento">
+                    <div class="capa-projeto-wrapper overlay-em-construcao">
+                        <!-- Ícone mecânico animado via CSS para indicar processamento em segundo plano -->
+                        <i class="fas fa-cog icone-engrenagem-animada"></i>
+                        <span class="txt-overlay-status">Em desenvolvimento</span>
+                    </div>
+                    <h3 class="titulo-projeto-card">Novo Módulo Do Sistema de Gestão da Ditec</h3>
+                    <p class="txt-projeto-card">Novos projetos inovadores e soluções disruptivas estão a caminho. Fique atento às novidades!</p>
+                    <a href="#" class="link-detalhes-projeto">Ver detalhes &rarr;</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================================================================
+         SECÇÃO DE ESTATÍSTICAS E CONTADORES (BARRA ESCURA INSTITUCIONAL)
+         ============================================================================================== -->
+    <section class="barra-estatisticas">
+        <div class="container">
+            <!-- Distribuição em 4 colunas horizontais de alto impacto visual -->
+            <div class="grade-estatisticas">
+                <!-- Bloco Estatístico 1: Recursos Humanos -->
+                <div class="caixa-estatistica">
+                    <div class="icone-stat"><i class="fas fa-user-friends"></i></div>
+                    <div class="valores-stat">
+                        <!-- O atributo data-target é lido pelo JavaScript para fazer a contagem incremental -->
+                        <h2 class="numero-contador" data-target="4">0</h2>
+                        <p class="txt-stat-rotulo"><strong>Especialistas</strong><br>Profissionais dedicados</p>
+                    </div>
+                </div>
+
+                <!-- Bloco Estatístico 2: Entregas Efetuadas -->
+                <div class="caixa-estatistica">
+                    <div class="icone-stat"><i class="fas fa-briefcase"></i></div>
+                    <div class="valores-stat">
+                        <h2 class="numero-contador" data-target="3">0</h2>
+                        <p class="txt-stat-rotulo"><strong>Projetos</strong><br>Entregues com sucesso</p>
+                    </div>
+                </div>
+
+                <!-- Bloco Estatístico 3: Taxa de Sucesso -->
+                <div class="caixa-estatistica">
+                    <div class="icone-stat"><i class="fas fa-check-circle"></i></div>
+                    <div class="valores-stat">
+                        <h2 class="numero-contador" data-target="100">0</h2>
+                        <p class="txt-stat-rotulo"><strong>Compromisso</strong><br>Qualidade garantida</p>
+                    </div>
+                </div>
+
+                <!-- Bloco Estatístico 4: Regime Operacional -->
+                <div class="caixa-estatistica">
+                    <div class="icone-stat"><i class="fas fa-clock"></i></div>
+                    <div class="valores-stat">
+                        <h2 class="numero-contador" data-target="24">0</h2>
+                        <p class="txt-stat-rotulo"><strong>Dedicação</strong><br>Focados no cliente 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================================================================
+         SECÇÃO DE EQUIPA DE ENGENHARIA E ESPECIALISTAS
+         ============================================================================================== -->
+    <section class="seccao-equipa" id="equipa">
+        <div class="container">
+            <!-- Cabeçalho identificativo do time interno da DITEC -->
+            <div class="cabecalho-bloco">
+                <span class="subtitulo-mini">NOSSA EQUIPA</span>
+                <h2 class="titulo-principal">Profissionais que fazem acontecer</h2>
+            </div>
+
+            <!-- Grade contendo os 4 profissionais descritos no escopo corporativo -->
+            <div class="grade-equipa">
+                <!-- Membro 1: Engenharia Full Stack -->
+                <div class="bloco-membro-equipa">
+                    <div class="moldura-foto-perfil">
+                        <img src="img/EQUIPA/BRUNO MAURO.jpeg" alt="BRUNO MAURO - Engenheiro Full Stack" class="foto-perfil">
+                    </div>
+                    <h3 class="nome-membro">BRUNO MAURO</h3>
+                    <p class="cargo-membro">Desenvolvedor Full Stack</p>
+                    <div class="redes-sociais-membro">
+                        <a href="#" class="rede-link-icone"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="rede-link-icone"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Membro 2: Redes e Conectividade -->
+                <div class="bloco-membro-equipa">
+                    <div class="moldura-foto-perfil">
+                        <img src="img/EQUIPA/MARINELA.jpg" alt="MARINELA DUPAN - ENG. DE PROGRAMAÇÃO DESKTOP" class="foto-perfil">
+                    </div>
+                    <h3 class="nome-membro">MARINELA DUPAN</h3>
+                    <p class="cargo-membro">Especialista Programação Desktop</p>
+                    <div class="redes-sociais-membro">
+                        <a href="#" class="rede-link-icone"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="rede-link-icone"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Membro 3: Experiência Visual e Interface -->
+                <div class="bloco-membro-equipa">
+                    <div class="moldura-foto-perfil">
+                        <img src="img/EQUIPA/MARTA.jpg" alt="GAIO MARIO - UI/UX" class="foto-perfil">
+                    </div>
+                    <h3 class="nome-membro">GAIO MARIO</h3>
+                    <p class="cargo-membro">Designer UI/UX</p>
+                    <div class="redes-sociais-membro">
+                        <a href="#" class="rede-link-icone"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="rede-link-icone"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Membro 4: Análise de Processos -->
+                <div class="bloco-membro-equipa">
+                    <div class="moldura-foto-perfil">
+                        <img src="img/EQUIPA/MARTA.jpg" alt="Daniel Costa - Analista" class="foto-perfil">
+                    </div>
+                    <h3 class="nome-membro">Daniel Costa</h3>
+                    <p class="cargo-membro">Analista de Sistemas</p>
+                    <div class="redes-sociais-membro">
+                        <a href="#" class="rede-link-icone"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="rede-link-icone"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================================================================
+         SECÇÃO DE PARCEIROS (CARROSSEL DINÂMICO COMPLETO)
+         ============================================================================================== -->
+    <section class="seccao-parceiros" id="parceiros">
+        <div class="container">
+            <!-- Cabeçalho do bloco de marcas parceiras -->
+            <div class="cabecalho-bloco">
+                <span class="subtitulo-mini">NOSSOS PARCEIROS</span>
+                <h2 class="titulo-principal">Construímos juntos grandes soluções</h2>
+            </div>
+            
+            <!-- Invólucro de posicionamento estratégico do controle do carrossel -->
+            <div class="carrossel-wrapper-geral">
+                <!-- Botão de controle manual para retroceder slides à esquerda -->
+                <button class="seta-carrossel seta-esquerda" id="btnAnterior">&#8249;</button>
+                
+                <!-- Janela de visualização restrita (recorta o conteúdo transbordante) -->
+                <div class="carrossel-janela-mascara">
+                    <!-- Linha corrida que agrupa e move as marcas linearmente via JS -->
+                    <div class="carrossel-trilho-marcas" id="trilhoParceiros">
+                        <!-- Logos genéricos de grandes marcas tecnológicas mundiais simulando homologação -->
+                        <div class="bloco-marca-item"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Huawei_Logo.svg" alt="Huawei"></div>
+                        <div class="bloco-marca-item"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Dell_logo_2016.svg" alt="Dell"></div>
+                        <div class="bloco-marca-item"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/MikroTik_Logo.svg" alt="MikroTik"></div>
+                        <div class="bloco-marca-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Intel_logo_%282020%29.svg" alt="Intel"></div>
+                        <div class="bloco-marca-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Cpanel_logo.svg" alt="cPanel"></div>
+                        <div class="bloco-marca-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Fortinet_logo.svg" alt="Fortinet"></div>
+                    </div>
+                </div>
+
+                <!-- Botão de controle manual para avançar slides à direita -->
+                <button class="seta-carrossel seta-direita" id="btnProximo">&#8250;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================================================================
+         SECÇÃO DE CONTACTO COM FORMULÁRIO OPERACIONAL INTEGRADO
+         ============================================================================================== -->
+    <section class="seccao-contacto" id="contactos">
+        <div class="container">
+            <div class="cabecalho-bloco">
+                <span class="subtitulo-mini">ENTRE EM CONTACTO</span>
+                <h2 class="titulo-principal">Vamos conversar sobre o seu projeto</h2>
+            </div>
+
+            <!-- Wrapper flexível dividindo o formulário de captação e os dados diretos de contacto -->
+            <div class="estrutura-contacto-bloco">
+                <!-- Formulário de contacto ativo -->
+                <div class="formulario-contacto-area">
+                    <form id="formularioDitec" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso para a DITEC!');">
+                        <!-- Linha combinada com Nome e Email lado a lado para telas grandes -->
+                        <div class="linha-dupla-campos">
+                            <input type="text" placeholder="Nome" class="campo-input-ditec" required>
+                            <input type="email" placeholder="Email" class="campo-input-ditec" required>
+                        </div>
+                        <!-- Campo de inserção de Assunto geral -->
+                        <input type="text" placeholder="Assunto" class="campo-input-ditec" required>
+                        <!-- Área de texto livre para digitação da mensagem corporativa -->
+                        <textarea placeholder="Mensagem" rows="5" class="campo-textarea-ditec" required></textarea>
+                        <!-- Botão de submissão estilizado em azul de alta performance -->
+                        <button type="submit" class="btn-submissao-formulario">ENVIAR MENSAGEM &nbsp;<i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- Bloco lateral com canais diretos de comunicação e geolocalização -->
+                <div class="info-contacto-lateral">
+                    <!-- Canal 1: Atendimento Telefónico -->
+                    <div class="cartao-info-direto">
+                        <div class="icone-info-canal"><i class="fas fa-phone-alt"></i></div>
+                        <div class="textos-info-canal">
+                            <h4 class="titulo-canal">Telefone</h4>
+                            <p class="dados-canal">+244 936 123 456</p>
+                        </div>
+                    </div>
+
+                    <!-- Canal 2: Caixa Postal Eletrónica -->
+                    <div class="cartao-info-direto">
+                        <div class="icone-info-canal"><i class="fas fa-envelope"></i></div>
+                        <div class="textos-info-canal">
+                            <h4 class="titulo-canal">Email</h4>
+                            <p class="dados-canal">contacto@ditec.co.ao</p>
+                        </div>
+                    </div>
+
+                    <!-- Canal 3: Sede Física -->
+                    <div class="cartao-info-direto">
+                        <div class="icone-info-canal"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="textos-info-canal">
+                            <h4 class="titulo-canal">Endereço</h4>
+                            <p class="dados-canal">Zango, Viana - Luanda, Angola</p>
+                        </div>
+                    </div>
+
+                    <!-- Canal 4: Disponibilidade Operacional -->
+                    <div class="cartao-info-direto">
+                        <div class="icone-info-canal"><i class="fas fa-clock"></i></div>
+                        <div class="textos-info-canal">
+                            <h4 class="titulo-canal">Horário</h4>
+                            <p class="dados-canal">Segunda - Sexta: 08h - 17h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================================================================
+         RODAPÉ CORPORATIVO SIMPLES E INSTITUCIONAL
+         ============================================================================================== -->
+<footer class="rodape-corporativo-premium">
+    <div class="container grid-rodape-conteudo">
+        
+        <div class="coluna-rodape-marca">
+            <div class="logo-rodape-area">
+                <img src="img/logo/LOGO.png" alt="Logótipo DITEC Rodapé" class="img-logo-rodape">
+            </div>
+            <p class="descricao-marca-rodape">Transformamos ideias em soluções tecnológicas que impulsionam o futuro.</p>
+            <div class="redes-sociais-rodape">
+                <a href="#" aria-label="Siga-nos no Facebook" class="link-social-rodape"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Siga-nos no LinkedIn" class="link-social-rodape"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Siga-nos no Instagram" class="link-social-rodape"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Siga-nos no GitHub" class="link-social-rodape"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="coluna-rodape-links">
+            <h3 class="titulo-coluna-rodape">NAVEGAÇÃO</h3>
+            <ul class="lista-links-rodape">
+                <li><a href="#" class="item-link-rodape">Home</a></li>
+                <li><a href="#sobre" class="item-link-rodape">Sobre</a></li>
+                <li><a href="#servicos" class="item-link-rodape">Serviços</a></li>
+                <li><a href="#projetos" class="item-link-rodape">Projetos</a></li>
+                <li><a href="#equipa" class="item-link-rodape">Equipa</a></li>
+                <li><a href="#parceiros" class="item-link-rodape">Parceiros</a></li>
+                <li><a href="#contactos" class="item-link-rodape">Contactos</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna-rodape-links">
+            <h3 class="titulo-coluna-rodape">SERVIÇOS</h3>
+            <ul class="lista-links-rodape">
+                <li><a href="#servicos" class="item-link-rodape">Desenvolvimento de Sistemas</a></li>
+                <li><a href="#servicos" class="item-link-rodape">Integração Tecnológica</a></li>
+                <li><a href="#servicos" class="item-link-rodape">Infraestrutura Tecnológica</a></li>
+                <li><a href="#servicos" class="item-link-rodape">Consultoria Tecnológica</a></li>
+                <li><a href="#servicos" class="item-link-rodape">Segurança Informática</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna-rodape-links">
+            <h3 class="titulo-coluna-rodape">CONTACTOS</h3>
+            <ul class="lista-links-rodape lista-contactos-rodape-direto">
+                <li><i class="fas fa-phone-alt"></i> <span>+244 936 123 456</span></li>
+                <li><i class="far fa-envelope"></i> <span>contacto@ditec.co.ao</span></li>
+                <li><i class="fas fa-map-marker-alt"></i> <span>Zango 0, Luanda - Angola</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="barra-direitos-autorais-fundo">
+        <div class="container container-direitos-alinhamento">
+            <p class="texto-direitos-autorais">&copy; 2026 DITEC. Todos os direitos reservados.</p>
+            <a href="#" class="botao-subir-topo" aria-label="Voltar para o topo da página"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Vincula o script JavaScript externo responsável pelos comportamentos dinâmicos e contadores -->
+    <script src="js/script.js"></script>
+</body>
+</html>
